@@ -50,10 +50,10 @@ while data_max :
     elif data_attuale[1] == 2 and data_attuale[2] == 28 :
         data_attuale[2] = 1
         data_attuale[1] = data_attuale[1] + 1
-    if data_attuale[1] == 12 and data_attuale[0] == 14 :
+    if data_attuale[1] == 12 and data_attuale[0] == 14 and data_attuale[2] == 31 :
         data_attuale[2] = 1
         data_attuale[1] = 1
-        
+        data_attuale[0] = data_attuale[0] + 1
     if data_attuale[0] == data_limite[0] and data_attuale[1] == data_limite[1] and data_attuale[2] == data_limite[2] : data_max = False
 
 minestrone = open('minestrone_alchool.txt', 'w')
