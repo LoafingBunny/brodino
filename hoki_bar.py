@@ -19,7 +19,7 @@ import re
 from BeautifulSoup import BeautifulSoup, SoupStrainer
 
 lista_totale = []
-data_attuale = [15, 12, 05] # anno, mese, giorno
+data_attuale = [14, 12, 05] # anno, mese, giorno
 data_limite = (15, 12, 07) # data che NON deve essere raggiunta
 mesi_di_trenta = (4, 6, 9, 11)
 mesi_di_trentuno = (1, 3, 5, 7, 8, 10)
