@@ -119,12 +119,13 @@ while True :
                 dominio_vero = 'altro'
     
         #da qui cerca i commenti:
+        
         link = i('a')
         for g in link :
             
             testo = g.findAll(text=True)
             for l in testo :
-                commenti = re.findall('([0-9]+).comment', l)
+                commenti = re.findall('([0-9]+).comment', l.replace('.', ''))
                 if len(commenti) < 1 : continue
                 print 'Numero di commenti:', int(commenti[0])
                 commenti_veri = int(commenti[0])
